@@ -1,0 +1,122 @@
+.CreateCoffee, .EditCoffee {
+    height: 100%;
+}
+
+.CreateCoffee .button-container, .EditCoffee .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CreateCoffee .button-container input, .EditCoffee .button-container input {
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    border: 2px solid gray;
+    color: black;
+}
+
+.CreateCoffee .button-container .submit, .EditCoffee .button-container .submit {
+    background-color: rgb(42, 97, 165);
+}
+
+.CreateCoffee .custom-coffee-info, .EditCoffee .custom-coffee-info {
+    display: flex;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.CreateCoffee .custom-coffee-info .price, .EditCoffee .custom-coffee-info .price {
+    width: 150px;
+}
+
+.CreateCoffee .custom-coffee-info .price p, .EditCoffee .custom-coffee-info .price p {
+    font-size: 1.8em;
+    font-weight: bold;
+    color:rgb(249, 132, 15);
+}
+
+.CreateCoffee .custom-coffee-info .selection p, .EditCoffee .custom-coffee-info .selection p {
+    line-height: 1.8em;
+    text-shadow: 1px 1px 1px black;
+    /* width: 1100px;
+    margin: 0 auto; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* padding: 5px 10px; */
+}
+
+.CreateCoffee .custom-coffee-info p, .EditCoffee .custom-coffee-info p {
+    margin: 10px;
+}
+
+.popup {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.popup article {
+    margin: 10px;
+    position: relative;
+}
+
+.popup article img {
+    object-fit: contain;
+}
+
+.popup article.selected::after {
+    content: "✔";
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5em;
+    color: green;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 0.2em 0.2em;
+}
+
+.popup img {
+    width: 200px;
+    height: 200px;
+}
+
+.ViewCoffee article a {
+    color: rgb(255, 242, 146);
+    cursor: pointer;
+}
+
+.CoffeeDetails {
+    margin: 0 100px;
+}
+
+.CoffeeDetails .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(249, 132, 15);
+}
+
+.grid-item img {
+    object-fit: contain;
+    max-width: 200px;
+    height: 200px;
+}
+
+.CoffeeDetails .head-container {
+    display: flex;
+    align-items: center;
+}
+
+.CoffeeDetails .head-container .update {
+    margin-left: auto;
+    color: white;
+}
+
+.CoffeeDetails .head-container .update a {
+    color: rgb(255, 242, 146);
+    cursor: pointer;
+}
